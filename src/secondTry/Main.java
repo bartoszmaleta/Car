@@ -86,12 +86,13 @@ class Volkswagen extends Car {
 
 	@Override
 	public String accelerate() {
-        return "Volkswagen -> accelerate()";
+        return getClass().getSimpleName() + " -> accelerate()";
 	}
 
 	@Override
 	public String brake() {
-        return "Volkswagen -> brake()";
+        // COOOOOOOOOOOOL THING!!!!!!!!!!
+        return getClass().getSimpleName() + " -> brake()";
 	}
 
 	@Override
