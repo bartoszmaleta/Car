@@ -54,8 +54,50 @@ class Mitsubishi extends Car {
 	public String startEngine() {
         return "Mitsubishi -> startEnging()";
 	}
-    
-    
+}
+
+class Skoda extends Car {
+
+    public Skoda(int cylinders, String name) {
+        super(cylinders, name);
+    }
+
+	@Override
+	public String accelerate() {
+        return "Skoda -> accelerate()";
+	}
+
+	@Override
+	public String brake() {
+        return "Skoda -> brake()";
+	}
+
+	@Override
+	public String startEngine() {
+        return "Skoda -> startEnging()";
+	}
+}
+
+class Volkswagen extends Car {
+
+    public Volkswagen(int cylinders, String name) {
+        super(cylinders, name);
+    }
+
+	@Override
+	public String accelerate() {
+        return "Volkswagen -> accelerate()";
+	}
+
+	@Override
+	public String brake() {
+        return "Volkswagen -> brake()";
+	}
+
+	@Override
+	public String startEngine() {
+        return "Volkswagen -> startEnging()";
+	}
 }
 
 public class Main {
@@ -65,6 +107,28 @@ public class Main {
         System.out.println(car.startEngine());
         System.out.println(car.accelerate());
         System.out.println(car.brake());
+
+        System.out.println("------------");
+
+        Mitsubishi mitsubishi = new Mitsubishi(6, "Outlander");
+        System.out.println(mitsubishi.startEngine());
+        System.out.println(mitsubishi.accelerate());
+        System.out.println(mitsubishi.brake());
+
+        System.out.println("------------");
+
+        Skoda skoda = new Skoda (6, "Octavia");
+        System.out.println(skoda.startEngine());
+        System.out.println(skoda.accelerate());
+        System.out.println(skoda.brake());
+
+        System.out.println("------------");
+
+        Volkswagen volkswagen = new Volkswagen (6, "Passat");
+        System.out.println(volkswagen.startEngine());
+        System.out.println(volkswagen.accelerate());
+        System.out.println(volkswagen.brake());
+
 
     }
 }
