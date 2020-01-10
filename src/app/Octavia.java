@@ -15,5 +15,4 @@ public class Octavia extends Car {
     public void setSeatbelts(int seatbelts) {
         this.seatbelts = seatbelts;
     }
-     
 }

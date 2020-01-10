@@ -14,6 +14,4 @@ public class Insignia {
     public void setReversingCamera(int reversingCamera) {
         this.reversingCamera = reversingCamera;
     }
-    
-    
 }

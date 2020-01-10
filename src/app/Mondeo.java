@@ -15,5 +15,4 @@ public class Mondeo extends Car {
     public void setParkingSensors(int parkingSensors) {
         this.parkingSensors = parkingSensors;
     }
-        
 }
